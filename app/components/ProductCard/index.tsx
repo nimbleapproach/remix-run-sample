@@ -33,7 +33,7 @@ const ProductCard: React.FC<IProps> = ({ product }) => {
         <Link to={`/products/${product.id}/edit`} className="mr-2">
           <Button>Edit</Button>
         </Link>
-        <Link to={`/products/${product.id}/destory`}>
+        <Link to={`/products/${product.id}/destroy`}>
           <Button variant="destructive">Delete</Button>
         </Link>
       </CardFooter>

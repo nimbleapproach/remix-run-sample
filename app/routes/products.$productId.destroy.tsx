@@ -1,7 +1,8 @@
-import { ActionFunctionArgs, redirect } from "@remix-run/node";
+import { LoaderFunctionArgs, redirect } from "@remix-run/node";
 import invariant from "tiny-invariant";
 
-export async function action({ params }: ActionFunctionArgs) {
+export async function loader({ params }: LoaderFunctionArgs) {
+  console.log("Test");
   invariant(params.productId, "Expecting params.productId");
 
   const res = await fetch(
